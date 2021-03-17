@@ -18,12 +18,11 @@ body {
 	background: #f2f2f2;
 }
 
-/* * ============================== */
-/* * ============ HEADER ========== */
-/* * ============================== */
-
+/** HEADER **/
 .navbar {
 	background: #FFCD48;
+    position: sticky;
+    top: 0;
 }
 
 .navbar a {
@@ -50,10 +49,7 @@ body {
 	justify-content: space-between;
 }
 
-/* * ============================== */
-/* * ===== CONTENEDOR IMAGEN ====== */
-/* * ============================== */
-
+/** CONTENEDOR IMAGEN **/
 .contenedor-imagen {
 	height: 100vh;
 }
@@ -66,10 +62,7 @@ body {
 	object-position: 0 bottom;
 }
 
-/* * ============================== */
-/* * ============ MAIN ============ */
-/* * ============================== */
-
+/** MAIN **/
 main {
 	min-height: 100vh;
 }
@@ -91,10 +84,7 @@ main .contenido .fecha {
 	color: #B5B5B5;
 }
 
-/* * ============================== */
-/* * ============ ASIDE =========== */
-/* * ============================== */
-
+/** ASIDE **/
 aside {
 	min-width: 30%;
 	margin: 40px 20px 20px 0;
@@ -102,6 +92,8 @@ aside {
 	background: #1D2F3D;
 	padding: 20px;
 	border-radius: 3px;
+    position: sticky;
+    top: 20px;
 }
 
 aside .titulo {
@@ -118,31 +110,26 @@ aside .indice a {
 	color: #FFCD48;
 }
 
-/* * ============================== */
-/* * ========== FOOTER ============ */
-/* * ============================== */
+/** FOOTER **/
+footer .navbar {
+    position: sticky;
+    bottom: 0;
+}
 
-
-
-/* * ============================== */
-/* * ====== MEDIA QUERIES ========= */
-/* * ============================== */
+/** MEDIA QUERIES **/
 @media screen and (max-width: 900px){
 	.navbar .contenedor {
 		flex-wrap: wrap;
 		margin: 0;
 		width: 100%;
 	}
-
 	.navbar a {
 		width: auto;
 		flex: 1;
 	}
-
 	.contenedor-imagen {
 		height: 50vh;
 	}
-
 	main .contenedor {
 		flex-direction: column;
 	}
