@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html  {
+	scroll-behavior: smooth;
+}
+
 a {
 	text-decoration: none;
 	outline: none;
@@ -132,5 +136,10 @@ footer .navbar {
 	}
 	main .contenedor {
 		flex-direction: column;
+	}
+
+	aside {
+		position: static;
+		margin: 48px 0 0 0;
 	}
 }
